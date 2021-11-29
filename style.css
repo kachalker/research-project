@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.vertical-overflow {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #6BB8DE;
+}
+
+#title1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 4.5em;
+    margin-top: .3em;
+    background-color: #DF0024;
+    padding: 0 .2em .3em;
+    width: fit-content;
+    margin-left: 4.6em;
+}
+
+#title2 {
+    font-family: 'Manus Smooth_TRIAL', sans-serif;
+    font-size: 1.7em;
+    background-color: #F4C300;
+    padding: .3em .3em;
+    width: fit-content;
+    margin-left: 25em;
+    margin-top: -1.1em;
+}
+
+#timeline {
+    margin-left: 7em;
+    margin-top: 1em;
+}
+
+#data-main, #vis-main {
+    margin: 2em;
+}
+
+#part1, #part2, #part3, #part4 {
+    line-height: 2em;
+    padding: 2em;
+}
+
+#data-title, #vis-title, #results-title {
+    font-family: "Oswald", sans-serif;
+    background-color: #DF0024;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 1em;
+    box-shadow: 20px 16px #F4C300;
+}
+
+#data-title {
+    font-size: 3em;
+}
+
+#vis-title {
+    font-size: 6em;
+    font-weight: 500;
+}
+
+#part1 h1, #part2 h1, #part3 h1, #part4 h1 {
+    font-family: "Oswald", sans-serif;
+    text-align: left;
+    margin-bottom: .5em;
+    margin-top: 0;
+    background-color: #009F3D;
+    width: fit-content;
+    font-size: 3em;
+    padding: .4em 1em .5em 1em;
+}
+
+#part1 p, #part2 p, #part3 p, #part4 a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    color: black;
+}
+
+#part4 a:hover {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 2em auto;
+}
+
+td a {
+    color: black;
+}
+
+td a:hover {
+    font-weight: bold;
+}
+  
+td, th {
+    padding: 1em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #231F20;
+}
+   
+th {
+    width: 20%;
+}
+  
+caption {
+    font-family: "Oswald", sans-serif;
+    text-align: left;
+    margin-bottom: .5em;
+    margin-top: 0;
+    background-color: #009F3D;
+    width: fit-content;
+    font-size: 2.5em;
+    padding: .4em 1em .5em 1em;
+}
+  
+thead {
+    background-color: #009F3D;
+    color: #F5F5F5;
+    font-size: 1.1em;
+}
+
+#vistitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.3em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DF0024;
+    width: fit-content;
+    padding: 0em 1em;
+    box-shadow: 20px 16px #F4C300;
+    text-align: center;
+    font-weight: 500;
+}
+
+.vis {
+    margin: 2.5em 1.5em 1.8em 1.5em; 
+}
+
+.vis-across {
+    margin: 2.5em 1.5em 1.8em 1.5em;
+    float: right;
+}
+
+.vis-snippet-h1 {
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    background-color: #009F3D;
+    width: fit-content;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .4em 1em .5em 1em;
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+.vis-snippet-p {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.vis-snippet-a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+}
+
+.vis-snippet-a:hover {
+   font-weight: 700; 
+}
+
+#navbar a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+li {
+    list-style: none;
+}
+
+#logo {
+    text-align: right;
+}
+
+#normal-footer {
+    width: 100%;
+    background-color: #E0E0E0;
+    border-top: solid black 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#oversize-page-footer {
+    width: 100%;
+    background-color: #E0E0E0;
+    border-top: solid black 2px;
+    height: 4.8em;
+}
+
+#footer-content {
+    float: right;
+    margin: .5em 1em;
+}
+
+#copyright {
+    font-family: 'Oswald', sans-serif;
+}
+
+#license {
+    margin-left: 3em;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #E0E0E0;
+    color: black;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #B3B3B3;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.services {
+    position: relative; 
+}
+
+.dropdown {
+    background-color: #B3B3B3;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #B3B3B3;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+input[type=checkbox]{
+ display: none;
+} 
+
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+ padding-bottom: 1em;
+ margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    .menu { 
+    display:none;
+    position: absolute;
+    background-color: #E0E0E0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+
+    .menu li:hover {
+    display: inline-block;
+    background-color: #B3B3B3;
+    transition: 0.3s ease;
+    }
+
+    .menu li + li {
+    margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+    display: block;
+    }
+
+    .hamburger {
+    display: block;
+    }
+
+    .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+    background-color: #B3B3B3;
+    }
+
+    input[type=checkbox]{
+        display: none;
+    } 
+
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+
+    @media (max-width: 768px) {
+
+        .menu { 
+            display:none;
+            position: absolute;
+            background-color: #E0E0E0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        .menu li:hover {
+            display: inline-block;
+            background-color: #B3B3B3;
+            transition: 0.3s ease;
+        }
+
+        .menu li + li {
+            margin-top: 12px;
+        }
+
+        input[type=checkbox]:checked ~ .menu{
+            display: block;
+        }
+
+        .hamburger {
+            display: block;
+        }
+
+        .dropdown {
+            left: 50%;
+            top: 30px;
+            transform: translateX(35%);
+        }
+
+        .dropdown li:hover {
+            background-color: #B3B3B3;
+        }
+    }
+}

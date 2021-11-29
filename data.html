@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Data</title>
+    <link href="https://fonts.cdnfonts.com/css/manus-smoothtrial" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+          <img src="images/logo.png" alt="Website logo" width="280" height="85">
+          <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visualizations.html">Visualizations</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main id="data-main">
+        <header id="data-title">
+            <h1>DATA</h1>
+        </header>
+        <section id="part1">
+            <header>
+                <h1>Data Model:</h1>
+            </header>
+            <p>&emsp;All of the data for this project came from online sources. For the first dataset I created, I utilized data from Tony Scupham&ndash;Bilton's blog, <i>The Queerstory Files</i>. On his blog, Scupham&ndash;Bilton compiled a list of every LGBTQ+ Olympic athlete and included information about them such as their name, home country, sport, what Olympics they competed in, and the medals they won. On his lists, along with the actual Olympic athletes, he also included reserve and alternate athletes as well as any athletes who competed in any Olympic trial or qualifying event. For the purpose of this project, I only included the actual Olympic athletes and reserve and alternate athletes since athletes who competed in the trials were not affected at all by the host country. This data is helpful to my research project because it provided me with all of the data about the athletes that I need.</p>
+            <p>&emsp;The second dataset I created utilized data from The World Population Review and Equaldex. The data I used from The World Population Review included the name of every world country and the population of that country in 2020. I chose to include this data in my dataset because it will allow me to put the number of LGBTQ+ athletes into context based on the country’s total population. The data I utilized from Equaldex was every country's equality index score. The equality index score is a 0&ndash;100 rating given to each country that demonstrates the rights and protections afforded to the LGBTQ+ community. This score includes things such as the legality of homosexuality and homosexual marriage, legal protections given to the LGBTQ+ community against discrimination, and the recognition of gender changes or non-binary genders. I chose to include the data from Equaldex into my dataset because it provides me a way to quanitifably say how LGBTQ+ friendly a country is.</p>
+            <table>
+                <caption>Data Model for Athlete Data</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Field Name</th>
+                        <th scope="col">Data Type</th>
+                        <th scope="col">Notes</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>String</td>
+                        <td>The name of the athlete written in the format FirstName LastName.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>HomeCountry</td>
+                        <td>String</td>
+                        <td>The home country of the athlete.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sport</td>
+                        <td>String</td>
+                        <td>The sport that the athlete competed in in the Olympics.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>Integer</td>
+                        <td>The year of the Olympics that the athlete competed in.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>HostCountry</td>
+                        <td>String</td>
+                        <td>The country that the Olympics was held in.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>GoldMedal</td>
+                        <td>Integer</td>
+                        <td>The amount of gold medals the athlete won.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>SilverMedal</td>
+                        <td>Integer</td>
+                        <td>The amount of silver medals the athlete won.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>BronzeMedal</td>
+                        <td>Integer</td>
+                        <td>The amount of bronze medals the athlete won.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files</a></td>
+                    </tr>
+                    <tr>
+                        <td>TotalMedals</td>
+                        <td>Integer</td>
+                        <td>The total medals won by the athlete.</td>
+                        <td><a href="https://queerstoryfiles.blogspot.com/">The Queerstory Files"</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Data Model for Country Data</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Field Name</th>
+                        <th scope="col">Data Type</th>
+                        <th scope="col">Notes</th>
+                        <th scope="col">Source</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Country</td>
+                        <td>String</td>
+                        <td>The name of the country.</td>
+                        <td><a href="https://worldpopulationreview.com/countries">The World Population Review</a></td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td>Integer</td>
+                        <td>The population of the country written without any commas.</td>
+                        <td><a href="https://worldpopulationreview.com/countries">The World Population Review</a></td>
+                    </tr>
+                    <tr>
+                        <td>EqualityIndex</td>
+                        <td>Integer</td>
+                        <td>The Equality Index score of the country, which is a 1-100 score given to countries to represent the overall attitude of the country to the LGBTQ+ community.</td>
+                        <td><a href="https://www.equaldex.com/">Equaldex</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="part2">
+            <header>
+                <h1>Data Plan:</h1>
+            </header>
+            <p>&emsp;To create my first dataset, I had to transform all of Scupham&ndash;Bilton's data into a CSV file since his was orginally a pdf file. To create this CSV file, I had to input all of the data piece by piece into Microsoft Excel. The only part of his data that I could not directly input was the Host Country because Scupham&ndash;Bilton only included the Host City with his data. However, to change this for my own dataset, I only had to look up on Google what country the city was located in.</p>
+            <p>&emsp;To create my second dataset, I first downloaded a CSV file from The World Population Review. Since The World Population Review Data also included data fields that I did not need for my project, I had to delete every data field except for Country and 2020 Population. Then I inputted the Equality Index Score from Equaldex as another data field on the same CSV file. Equaldex did not provide a comprehensize list of Equality Index Scores, so I had to input them country by country.</p>
+        </section>
+        <section id="part3">
+            <header>
+                <h1>Data License:</h1>
+            </header>
+            <p>&emsp;I am releasing my datasets under an Attribution-NonCommercial-ShareAlike 4.0 International license. This license allows adaptations of my work to be shared as long as it for a non-commercial use and under a compatible license. To credit the sources I am utilizing data from, I am including links to the sources in my data model. If someone choose to utilize my dataset, the only attribution needed is a link to this website.</p>
+        </section>
+        <section id="part4">
+            <header>
+                <h1>Download CSV versions of my Datasets Here:</h1>
+            </header>
+            <a href="datasets/Athlete Data.csv" download>Athlete Data</a>
+            <br>
+            <a href="datasets/Country Data.csv" download>Country Data</a>
+        </section>
+    </main>
+    <footer id="oversize-page-footer">
+        <div id="footer-content">
+          <a id="license" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+          <p id="copyright">&copy;Kaitlyn Chalker 2021</p>
+        </div> 
+      </footer>
+</body>
+</html>
